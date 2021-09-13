@@ -1,47 +1,56 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-import { BiCameraMovie } from 'react-bootstrap-icons';
+import './NavbarComponent.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const NavbarComponent = () => {
   return (
     <div>
-      <Navbar bg='light' expand='lg'>
-        <BiCameraMovie></BiCameraMovie>
-        <Navbar.Brand href='#'>Movie Platform</Navbar.Brand>
-        <Navbar.Toggle aria-controls='navbarScroll' />
-        <Navbar.Collapse id='navbarScroll'>
-          <Nav
-            className='mr-auto my-2 my-lg-0'
-            style={{ maxHeight: '100px' }}
-            navbarScroll
+      <nav className='navbar navbar-expand-lg navbar-light'>
+        <div className='container-fluid'>
+          <div className='movie-icon'>
+            <FontAwesomeIcon icon='tape' />
+          </div>
+          <a className='navbar-brand' href='#'>
+            <h1 className='brand-name'>Movie Platform</h1>
+          </a>
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#navbarSupportedContent'
+            aria-controls='navbarSupportedContent'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
           >
-            <Nav.Link href='#action1'>Home</Nav.Link>
-            <Nav.Link href='#action2'>Link</Nav.Link>
-            <NavDropdown title='Link' id='navbarScrollingDropdown'>
-              <NavDropdown.Item href='#action3'>Action</NavDropdown.Item>
-              <NavDropdown.Item href='#action4'>
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href='#action5'>
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href='#' disabled>
-              Link
-            </Nav.Link>
-          </Nav>
-          <Form className='d-flex'>
-            <FormControl
-              type='search'
-              placeholder='Search'
-              className='mr-2'
-              aria-label='Search'
-            />
-            <Button variant='outline-success'>Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Navbar>
+            <span className='navbar-toggler-icon'></span>
+          </button>
+          <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+            <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+              <li className='nav-item1'>
+                <a className='nav-link active' aria-current='page' href='#'>
+                  <h4 className="fav-movies-name">My Favorites</h4> 
+                </a>
+              </li>
+              <li className='nav-item2'>
+                <a className='nav-link' href='#'>
+                  <h4 className="top-rated-name">Top Rated Movies</h4>
+                </a>
+              </li>
+            </ul>
+            <form className='d-flex'>
+              <input
+                className='form-control me-2'
+                type='search'
+                placeholder='Search a Movie'
+                aria-label='Search'
+              />
+              <button className='btn btn-outline-success' type='submit'>
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </div>
   )
 }
