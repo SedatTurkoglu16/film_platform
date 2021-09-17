@@ -6,8 +6,20 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+<<<<<<< HEAD
+=======
+    "axios": "^0.21.4",
+    "bootstrap": "^5.1.0",
+    "dotenv": "^10.0.0",
+    "json-server": "^0.16.3",
+>>>>>>> 5106b9a (I got api from tmdb. I created topRated page and listed top Movies. I used router for routing another page or components.)
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
+=======
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.3.0",
+>>>>>>> 5106b9a (I got api from tmdb. I created topRated page and listed top Movies. I used router for routing another page or components.)
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
