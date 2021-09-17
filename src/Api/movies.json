@@ -1,0 +1,78 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "name": "Ad Astra",
+        "rating": 6.3,
+        "overview": "A science Fiction Movie",
+        "imageURL": "https://image.tmdb.org/t/p/original/wigZBAmNrIhxp2FNGOROUAeHvdh.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Fight Club",
+        "rating": 9.0,
+        "overview": "A Classic Movie.",
+        "imageURL": "https://image.tmdb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Ad Astra",
+        "rating": 6.3,
+        "overview": "lorem ipsum",
+        "imageURL": "https://image.tmdb.org/t/p/original/wigZBAmNrIhxp2FNGOROUAeHvdh.jpg"
+      },{
+        "id": 1,
+        "name": "Fight Club",
+        "rating": 9.0,
+        "overview": "A Classic Movie.",
+        "imageURL": "https://image.tmdb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Ad Astra",
+        "rating": 6.3,
+        "overview": "lorem ipsum",
+        "imageURL": "https://image.tmdb.org/t/p/original/wigZBAmNrIhxp2FNGOROUAeHvdh.jpg"
+      },{
+        "id": 1,
+        "name": "Fight Club",
+        "rating": 9.0,
+        "overview": "A Classic Movie.",
+        "imageURL": "https://image.tmdb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Ad Astra",
+        "rating": 6.3,
+        "overview": "lorem ipsum",
+        "imageURL": "https://image.tmdb.org/t/p/original/wigZBAmNrIhxp2FNGOROUAeHvdh.jpg"
+      },{
+        "id": 1,
+        "name": "Fight Club",
+        "rating": 9.0,
+        "overview": "A Classic Movie.",
+        "imageURL": "https://image.tmdb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Ad Astra",
+        "rating": 6.3,
+        "overview": "lorem ipsum",
+        "imageURL": "https://image.tmdb.org/t/p/original/wigZBAmNrIhxp2FNGOROUAeHvdh.jpg"
+      },{
+        "id": 1,
+        "name": "Fight Club",
+        "rating": 9.0,
+        "overview": "A Classic Movie.",
+        "imageURL": "https://image.tmdb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Ad Astra",
+        "rating": 6.3,
+        "overview": "lorem ipsum",
+        "imageURL": "https://image.tmdb.org/t/p/original/wigZBAmNrIhxp2FNGOROUAeHvdh.jpg"
+      }
+    ]
+  }
+

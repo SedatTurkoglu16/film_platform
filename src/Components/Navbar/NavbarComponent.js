@@ -1,6 +1,7 @@
 import React from 'react'
 import './NavbarComponent.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 
 const NavbarComponent = () => {
   return (
@@ -28,12 +29,16 @@ const NavbarComponent = () => {
             <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
               <li className='nav-item1'>
                 <a className='nav-link active' aria-current='page' href='#'>
-                  <h4 className="fav-movies-name">My Favorites</h4> 
+                <Link 
+                  className="top-rated-name" to="/topRated" type="button"
+                  >My Favorite Movies</Link> 
                 </a>
               </li>
               <li className='nav-item2'>
                 <a className='nav-link' href='#'>
-                  <h4 className="top-rated-name">Top Rated Movies</h4>
+                  <Link 
+                  className="top-rated-name" to="/favMovies" type="button"
+                  >Top Rated Movies</Link>
                 </a>
               </li>
             </ul>
