@@ -19,7 +19,7 @@ const NavbarComponent = () => {
             type='button'
             data-bs-toggle='collapse'
             data-bs-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
+            aria-controls='navbarSupportedContent'F
             aria-expanded='false'
             aria-label='Toggle navigation'
           >
@@ -29,16 +29,20 @@ const NavbarComponent = () => {
             <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
               <li className='nav-item1'>
                 <a className='nav-link active' aria-current='page' href='#'>
-                <Link 
-                  className="top-rated-name" to="/topRated" type="button"
-                  >My Favorite Movies</Link> 
+                  <Link
+                    className='top-rated-name'
+                    to='/favMovies'
+                    type='button'
+                  >
+                    My Favorite Movies
+                  </Link>
                 </a>
               </li>
               <li className='nav-item2'>
                 <a className='nav-link' href='#'>
-                  <Link 
-                  className="top-rated-name" to="/favMovies" type="button"
-                  >Top Rated Movies</Link>
+                  <Link className='top-rated-name' to='/topRated' type='button'>
+                    Top Rated Movies
+                  </Link>
                 </a>
               </li>
             </ul>
