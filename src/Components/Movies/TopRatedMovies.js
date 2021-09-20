@@ -1,7 +1,7 @@
 import React from 'react'
 
 const PopularMovies = (props) => {
-  
+
     return (
       <div className='row'>
         {props.movies.map(movie => (

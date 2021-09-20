@@ -8,6 +8,7 @@ import { SliderData } from './Components/SliderSection/SliderData'
 import TopRatedMovies from './Components/Movies/TopRatedMovies'
 import axios from 'axios'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import SearchMovies from './Components/SearchMovies/SearchMovies'
 require('dotenv').config()
 
 class App extends React.Component {
@@ -20,20 +21,19 @@ class App extends React.Component {
       `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`
     )
     this.setState({ movies: response.data.results })
-    console.log(response.data.results)
   }
 
   render () {
     return (
       <Router>
         <div className='App'>
+        <NavbarComponent />
           <Switch>
           <Route
             path='/'
             exact
             render={() => (
               <React.Fragment>
-                <NavbarComponent />
                 <ImageSlider slides={SliderData} />
               </React.Fragment>
             )}>
@@ -43,6 +43,10 @@ class App extends React.Component {
             <TopRatedMovies movies={this.state.movies} />
           </Route>
           </Switch>
+          <Route path='/favMovies'>
+          <SearchMovies/>
+          </Route>
+          
         </div>
       </Router>
     )
