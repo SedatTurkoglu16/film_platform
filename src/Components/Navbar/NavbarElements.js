@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { NavLink as Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
 import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav`
@@ -16,6 +15,7 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
   color: #fff;
+  font-family: 'Rubik', sans-serif;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -72,6 +72,7 @@ export const NavBtnLink = styled(Link)`
   background: #256ce1;
   padding: 10px 22px;
   color: #fff;
+  font-family: 'Rubik', sans-serif;
   outline: none;
   border: none;
   cursor: pointer;

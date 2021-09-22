@@ -1,0 +1,9 @@
+body {
+    background: radial-gradient(
+      ellipse at left bottom,
+      rgb(6, 28, 47) 0%,
+      rgba(6, 3, 19, 0.9) 59%,
+      rgba(6, 10, 37, 0.9) 100%
+    );
+    box-shadow: 0 50px 70px -20px rgba(29, 27, 27, 0.8);
+}

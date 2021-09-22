@@ -1,0 +1,37 @@
+.card-body {
+  background-color: rgb(56, 18, 18);
+  transition: 0.3s;
+}
+
+.card:hover {
+    background-color: rgb(187, 187, 46);
+}
+
+.card:hover > .card-body {
+    background-color: rgb(16, 60, 65);
+}
+
+.card:hover .card-title {
+    color: rgb(255, 255, 255);
+}
+
+.card:hover .badge {
+    color: rgb(187, 187, 46);
+}
+
+.card:hover {
+    opacity: 78%;
+    width: 86%;
+}
+
+.card-title {
+  color: burlywood;
+  font-family: monospace;
+  font-size: 90%;
+  transition: 0.3s;
+}
+
+.badge {
+    color: teal;
+    transition: 0.3s;
+}

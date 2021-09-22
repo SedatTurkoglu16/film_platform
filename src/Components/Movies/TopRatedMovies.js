@@ -1,6 +1,9 @@
 import React from 'react'
+import './TopRatedMovies.css'
 
 const PopularMovies = (props) => {
+
+  const abc = 2;
 
     return (
       <div className='row'>
@@ -12,13 +15,17 @@ const PopularMovies = (props) => {
                 className='card-img-top'
                 alt='Sample Movie'
               />
-              <div className='card-body'>
+              <div className='card-body' >
                 <h5 className='card-title'>{movie.title}</h5>
-                <p className='card-text'>popularity: {movie.popularity}</p>
-                <div className='d-flex justify-content-between align-items-center'>
+                <div className='rating d-flex justify-content-between align-items-center'>
                   <h2>
-                    <span className='badge bg-info'>{movie.vote_average}</span>
+                    <span className='badge'>{movie.vote_average}</span>
                   </h2>
+                  <div>{abc == 1 ? (
+                    <> 
+                    Kalp
+                    </>
+                  ) : ( <> </>)}</div>
                 </div>
               </div>
             </div>

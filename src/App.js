@@ -9,6 +9,7 @@ import TopRatedMovies from './Components/Movies/TopRatedMovies'
 import axios from 'axios'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import SearchMovies from './Components/SearchMovies/SearchMovies'
+import LoginProcesses from './Components/Firebase/LoginProcesses'
 require('dotenv').config()
 
 class App extends React.Component {
@@ -46,7 +47,7 @@ class App extends React.Component {
           <Route path='/favMovies'>
           <SearchMovies/>
           </Route>
-          
+          <LoginProcesses />
         </div>
       </Router>
     )

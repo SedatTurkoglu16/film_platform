@@ -1,7 +1,5 @@
 import React from 'react'
 import './NavbarComponent.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom'
 import {
   Nav,
   NavLink,
@@ -15,8 +13,10 @@ const NavbarComponent = () => {
     <div>
       <Nav>
         <NavLink to='/'>
-          <FontAwesomeIcon icon='tape' />
-          <h5>Movie Platform</h5>
+          <div className='logo'>
+            <i class='fas fa-tape'></i>
+          </div>
+          <h5 className='brand-name'>Movie Platform</h5>
         </NavLink>
         <Bars />
         <NavMenu>
