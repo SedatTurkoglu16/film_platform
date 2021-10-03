@@ -3,8 +3,6 @@ import './TopRatedMovies.css'
 
 const PopularMovies = (props) => {
 
-  const abc = 2;
-
     return (
       <div className='row'>
         {props.movies.map(movie => (
@@ -21,11 +19,6 @@ const PopularMovies = (props) => {
                   <h2>
                     <span className='badge'>{movie.vote_average}</span>
                   </h2>
-                  <div>{abc == 1 ? (
-                    <> 
-                    Kalp
-                    </>
-                  ) : ( <> </>)}</div>
                 </div>
               </div>
             </div>

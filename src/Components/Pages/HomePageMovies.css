@@ -1,0 +1,12 @@
+.section-header {
+  margin-top: 3%;
+  margin-left: 7%;
+}
+
+.section-header > h3 {
+  color: antiquewhite;
+}
+
+.movie-item {
+  width: 150%;
+}
