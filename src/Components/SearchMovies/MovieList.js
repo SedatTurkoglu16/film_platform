@@ -1,16 +1,16 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const MovieList = (props) => {
-    return (
-        <>
-            {props.movies.map((movie, index) => (
-                <div className="col-sm-4 d-flex justify-content-start m-3">
-                    <img src={movie.Poster} alt='movie' />
-                </div>
-            ))}
-        </>
-    )
-}
+  return (
+    <div className="row">
+      {props.movies.map((movie, index) => (
+        <div className="col-sm mb-4">
+          <img src={movie.Poster} alt="movie" />
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default MovieList
+export default MovieList;

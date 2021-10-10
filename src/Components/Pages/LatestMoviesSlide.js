@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import "./HomePageMovies.css";
+import { BrowserRouter as Router, Link, useRouteMatch } from "react-router-dom";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -11,6 +12,7 @@ const breakPoints = [
 ];
 
 const LatestMoviesSlide = (props) => {
+  const { url, path } = useRouteMatch();
   return (
     <div class="section">
       <div className="section-header">
@@ -19,13 +21,20 @@ const LatestMoviesSlide = (props) => {
       <Carousel breakPoints={breakPoints}>
         {props.movies.map((movie) => (
           <Item>
-            <a href="/MovieInfo" class="movie-item">
+            <Link
+              to={{
+                pathname: "./MovieInfo",
+                aboutProps: {
+                  name: movie,
+                },
+              }}
+            >
               <img
                 src={`https://www.themoviedb.org/t/p/w220_and_h330_face/${movie.poster_path}`}
                 className="card-img-latest"
                 alt={movie.title}
               />
-            </a>
+            </Link>
           </Item>
         ))}
       </Carousel>

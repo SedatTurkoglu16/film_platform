@@ -5,7 +5,7 @@ import PopularMovies from "./PopularMovies";
 import axios from "axios";
 require("dotenv").config();
 
-const HomePageMovies = () => {
+const HomePageMovies = (props) => {
   const [movies, setMovies] = useState([]);
 
   const getLatestMovies = async () => {
